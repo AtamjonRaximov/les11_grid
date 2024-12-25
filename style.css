@@ -1,0 +1,54 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+header {
+  border: solid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 80vh;
+  grid-template-areas:
+    "bir bir ikki ikki ikki"
+    "bir bir ikki ikki ikki"
+    "tort tort ikki ikki ikki"
+    "tort tort besh olti olti"
+    "yetti yetti yetti olti olti"
+    "yetti yetti yetti olti olti";
+  gap: 10px;
+}
+.child {
+  border: solid;
+  background-color: rgb(81, 96, 96);
+  align-items: center;
+  justify-items: center;
+}
+.c1{
+  grid-area: bir;
+
+}
+.c2{
+  grid-area: ikki;
+
+}
+.c3{
+  grid-area: 2/2/4/4;
+
+}
+.c4{
+  grid-area: tort;
+
+}
+.c5{
+  grid-area: besh;
+
+}
+.c6{
+  grid-area: olti;
+
+}
+.c7{
+  grid-area: yetti;
+
+}
